@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Agregartarea"
+    android:background="#DDD4C5">
+
+
+    <TextView
+        android:id="@+id/agregartareatxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Agrega una terea"
+        android:textColor="#CF9A3E"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nombretarea"
+        android:layout_width="186dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nombre de la tarea"
+        android:inputType="text"
+        android:background="@drawable/btn_backgraunds"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agregartareatxt" />
+
+    <EditText
+        android:id="@+id/descripciontarea"
+        android:layout_width="366dp"
+        android:layout_height="405dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_backgraunds"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="Descripcion"
+        android:inputType="text"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombretarea" />
+
+    <Button
+        android:id="@+id/aceptar"
+        android:layout_width="62dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#2D0B43"
+        android:text=""
+        app:icon="@drawable/baseline_check_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="62dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#2D0B43"
+        android:text=""
+        app:icon="@drawable/baseline_delete_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/retroceder"
+        android:layout_width="61dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2D0B43"
+        android:text=""
+        app:icon="@drawable/outline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
